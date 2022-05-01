@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1700.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tribeca", "tribeca\tribeca.csproj", "{16624326-66C7-4071-B1CD-CD256F90D4F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tribecaTests", "tribecaTests\tribecaTests.csproj", "{FEE39B8A-24ED-488D-A0E6-240D4A1C9C74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{16624326-66C7-4071-B1CD-CD256F90D4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16624326-66C7-4071-B1CD-CD256F90D4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16624326-66C7-4071-B1CD-CD256F90D4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE39B8A-24ED-488D-A0E6-240D4A1C9C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE39B8A-24ED-488D-A0E6-240D4A1C9C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE39B8A-24ED-488D-A0E6-240D4A1C9C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE39B8A-24ED-488D-A0E6-240D4A1C9C74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
