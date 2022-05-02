@@ -1,10 +1,50 @@
 ﻿@page "/"
+@namespace tribeca
 
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Person Object Page</h1>
 
-Welcome to your new app.
+<br />
+First Name:
+<input @bind=FirstName>
+<br />
+Surname:
+<input @bind=Surname>
+<br />
+Date Of Birth - YYYY-MM-DD
+<input @bind=DOB>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@*<EditForm Model=@person>
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <InputText @bind-Value=person.Name class="form-control" id="Name" />
+    </div>
+    <div class="form-group">
+        <label for="Surname">Surname</label>
+        <InputText @bind-Value=person.Surname class="form-control" id="Surname" />
+    </div>
+    <div class="form-group">
+        <label for="DoB">Date of Birth: YYYY-MM-DD</label>
+        <InputDate @bind-Value=person.DateOfBirth @bind-Value:format="yyyy-MM-dd" class="form-control" id="DoB" />
+    </div>
+    <input type="submit" class="btn btn-primary" value="Save" />
+</EditForm>*@
+
+
+@code {
+
+    public Person person = new Person();
+
+    public string FirstName
+    {
+        get
+        { return person.Name; }
+        set
+        { person.Name = value; }
+    }
+    public string Surname { get { return person.Surname; } set { person.Surname = value; } }
+    public string DOB { get { return person.DateOfBirth.ToString("yyyy-MM-dd"); } set { person.DateOfBirth = Convert.ToDateTime(value); } }
+
+}
 
